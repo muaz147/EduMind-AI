@@ -1,0 +1,37 @@
+@import url("./login.css");
+
+.terms {
+  margin-top: -4px;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.terms span {
+  color: var(--muted);
+}
+
+.terms a {
+  color: var(--purple-dark);
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .auth-shell {
+    padding: 14px;
+  }
+
+  .auth-box {
+    border-radius: 20px;
+  }
+
+  .auth-visual,
+  .auth-form-wrap {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

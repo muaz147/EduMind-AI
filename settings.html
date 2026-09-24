@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAdapt AI | Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/pages.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a href="dashboard.html" class="brand">
+          <span class="brand-icon">✦</span>
+          <span>EduAdapt <b>AI</b></span>
+        </a>
+
+        <p class="nav-label">Workspace</p>
+
+        <nav class="navigation" aria-label="Main navigation">
+          <a href="dashboard.html"><span class="nav-icon">⌂</span> Dashboard</a>
+          <a href="my-learning.html"
+            ><span class="nav-icon">▣</span> My Learning</a
+          >
+          <a href="ai-tutor.html"><span class="nav-icon">✦</span> AI Tutor</a>
+          <a href="courses.html"><span class="nav-icon">◈</span> Subjects</a>
+          <a href="quiz.html"><span class="nav-icon">✓</span> Quizzes</a>
+          <a href="progress.html"><span class="nav-icon">◒</span> Progress</a>
+          <a href="history.html"><span class="nav-icon">◷</span> History</a>
+        </nav>
+
+        <div class="sidebar-divider"></div>
+
+        <nav class="navigation" aria-label="Support navigation">
+          <a href="settings.html" class="active"
+            ><span class="nav-icon">⚙</span> Settings</a
+          >
+          <a href="#"><span class="nav-icon">?</span> Help Center</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">ACCOUNT</p>
+            <h1>Settings</h1>
+          </div>
+          <div class="top-actions">
+            <button class="icon-button" aria-label="Notifications">
+              ♧<span></span>
+            </button>
+            <div class="avatar" aria-label="Profile: Muadh">M</div>
+          </div>
+        </header>
+
+        <section class="content-grid two-col">
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Profile</h2>
+              <a href="#">Edit</a>
+            </div>
+
+            <div class="profile-block">
+              <div class="profile-avatar">M</div>
+              <div>
+                <h3>Muadh</h3>
+                <p>Student · Level 4 learner</p>
+              </div>
+            </div>
+
+            <div class="settings-list">
+              <div>
+                <span>Email</span>
+                <strong>muadh@eduadapt.ai</strong>
+              </div>
+              <div>
+                <span>Learning goal</span>
+                <strong>Build full-stack web skills</strong>
+              </div>
+              <div>
+                <span>Preferred study time</span>
+                <strong>Evenings</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Preferences</h2>
+            </div>
+
+            <div class="toggle-list">
+              <label class="toggle-item">
+                <span>Push notifications</span>
+                <input type="checkbox" checked />
+              </label>
+              <label class="toggle-item">
+                <span>AI tutor reminders</span>
+                <input type="checkbox" checked />
+              </label>
+              <label class="toggle-item">
+                <span>Weekly summary emails</span>
+                <input type="checkbox" />
+              </label>
+              <label class="toggle-item">
+                <span>Quiet mode</span>
+                <input type="checkbox" />
+              </label>
+            </div>
+
+            <div class="theme-setting">
+              <div>
+                <h3>Appearance</h3>
+                <p>Choose the theme for your learning workspace.</p>
+              </div>
+              <div class="theme-switcher" aria-label="Theme selection">
+                <button
+                  type="button"
+                  data-theme-choice="dark"
+                  aria-pressed="true"
+                >
+                  <span aria-hidden="true">◐</span> Dark
+                </button>
+                <button
+                  type="button"
+                  data-theme-choice="light"
+                  aria-pressed="false"
+                >
+                  <span aria-hidden="true">○</span> Light
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="./js/theme.js"></script>
+  </body>
+</html>

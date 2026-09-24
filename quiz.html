@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAdapt AI | Quiz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/quiz.css" />
+  </head>
+
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a href="dashboard.html" class="brand">
+          <span class="brand-icon">✦</span>
+          <span>EduAdapt <b>AI</b></span>
+        </a>
+
+        <p class="nav-label">Workspace</p>
+
+        <nav class="navigation" aria-label="Main navigation">
+          <a href="dashboard.html"><span class="nav-icon">⌂</span> Dashboard</a>
+          <a href="my-learning.html"
+            ><span class="nav-icon">▣</span> My Learning</a
+          >
+          <a href="ai-tutor.html"><span class="nav-icon">✦</span> AI Tutor</a>
+          <a href="courses.html"><span class="nav-icon">◈</span> Subjects</a>
+          <a class="active" href="quiz.html"
+            ><span class="nav-icon">✓</span> Quizzes</a
+          >
+          <a href="progress.html"><span class="nav-icon">◒</span> Progress</a>
+          <a href="history.html"><span class="nav-icon">◷</span> History</a>
+        </nav>
+
+        <div class="sidebar-divider"></div>
+
+        <nav class="navigation" aria-label="Support navigation">
+          <a href="settings.html"><span class="nav-icon">⚙</span> Settings</a>
+          <a href="#"><span class="nav-icon">?</span> Help Center</a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="mini-avatar">M</div>
+          <div>
+            <strong>Muadh</strong>
+            <span>Student account</span>
+          </div>
+          <button class="more-button" aria-label="Account menu">•••</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="breadcrumbs">
+            <a href="dashboard.html">Dashboard</a>
+            <span>/</span>
+            <strong>Quiz</strong>
+          </div>
+
+          <div class="top-actions">
+            <button class="icon-button" aria-label="Notifications">
+              ♧<span aria-hidden="true"></span>
+            </button>
+            <div class="avatar" aria-label="Profile: Muadh">M</div>
+          </div>
+        </header>
+
+        <section class="quiz-heading">
+          <div>
+            <span class="eyebrow">COMPUTER SCIENCE · JAVASCRIPT</span>
+            <h1>JavaScript Fundamentals</h1>
+            <p>
+              Test your understanding of the concepts you have been practicing.
+            </p>
+          </div>
+          <div class="quiz-meta">
+            <span class="difficulty">Beginner</span>
+            <span class="time">◷ 12 min</span>
+          </div>
+        </section>
+
+        <div class="quiz-layout">
+          <section class="quiz-card">
+            <div class="quiz-progress-row">
+              <span>Question <strong>4</strong> of 10</span>
+              <span>40% complete</span>
+            </div>
+            <div class="progress-track" aria-label="Quiz progress">
+              <span></span>
+            </div>
+
+            <div class="question-block">
+              <span class="question-number">QUESTION 04</span>
+              <h2>
+                Which method adds one or more elements to the end of an array?
+              </h2>
+              <p class="question-hint">Choose the best answer to continue.</p>
+            </div>
+
+            <form class="answer-form">
+              <fieldset>
+                <legend class="sr-only">Choose an answer</legend>
+
+                <label class="answer-option">
+                  <input type="radio" name="answer" value="a" />
+                  <span class="option-letter">A</span>
+                  <span class="option-text">shift()</span>
+                </label>
+
+                <label class="answer-option selected">
+                  <input type="radio" name="answer" value="b" checked />
+                  <span class="option-letter">B</span>
+                  <span class="option-text">push()</span>
+                </label>
+
+                <label class="answer-option">
+                  <input type="radio" name="answer" value="c" />
+                  <span class="option-letter">C</span>
+                  <span class="option-text">slice()</span>
+                </label>
+
+                <label class="answer-option">
+                  <input type="radio" name="answer" value="d" />
+                  <span class="option-letter">D</span>
+                  <span class="option-text">unshift()</span>
+                </label>
+              </fieldset>
+
+              <div class="quiz-actions">
+                <button class="secondary-button" type="button">
+                  ← Previous
+                </button>
+                <button class="primary-button" type="submit">
+                  Next question <span>→</span>
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <aside class="quiz-sidebar">
+            <section class="side-card timer-card">
+              <div class="timer-icon">◷</div>
+              <div>
+                <span>Time remaining</span>
+                <strong>08:42</strong>
+              </div>
+              <div class="timer-line"><span></span></div>
+            </section>
+
+            <section class="side-card question-map-card">
+              <div class="side-card-heading">
+                <h2>Question map</h2>
+                <span>4 / 10</span>
+              </div>
+
+              <div class="question-map" aria-label="Question navigation">
+                <button
+                  class="done"
+                  type="button"
+                  aria-label="Question 1 completed"
+                >
+                  1
+                </button>
+                <button
+                  class="done"
+                  type="button"
+                  aria-label="Question 2 completed"
+                >
+                  2
+                </button>
+                <button
+                  class="done"
+                  type="button"
+                  aria-label="Question 3 completed"
+                >
+                  3
+                </button>
+                <button
+                  class="current"
+                  type="button"
+                  aria-current="step"
+                  aria-label="Current question 4"
+                >
+                  4
+                </button>
+                <button type="button" aria-label="Question 5">5</button>
+                <button type="button" aria-label="Question 6">6</button>
+                <button type="button" aria-label="Question 7">7</button>
+                <button type="button" aria-label="Question 8">8</button>
+                <button type="button" aria-label="Question 9">9</button>
+                <button type="button" aria-label="Question 10">10</button>
+              </div>
+
+              <div class="map-legend">
+                <span><i class="legend-dot done"></i> Completed</span>
+                <span><i class="legend-dot"></i> Upcoming</span>
+              </div>
+            </section>
+
+            <section class="side-card tip-card">
+              <span class="tip-icon">✦</span>
+              <div>
+                <span class="tip-label">AI STUDY TIP</span>
+                <p>
+                  Take a moment to recall the difference between adding to the
+                  start and end of an array.
+                </p>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/auth.js"></script>
+  </body>
+</html>

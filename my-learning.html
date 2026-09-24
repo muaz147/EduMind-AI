@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAdapt AI | My Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/pages.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a href="dashboard.html" class="brand">
+          <span class="brand-icon">✦</span>
+          <span>EduAdapt <b>AI</b></span>
+        </a>
+
+        <p class="nav-label">Workspace</p>
+
+        <nav class="navigation" aria-label="Main navigation">
+          <a href="dashboard.html"><span class="nav-icon">⌂</span> Dashboard</a>
+          <a href="my-learning.html" class="active"
+            ><span class="nav-icon">▣</span> My Learning</a
+          >
+          <a href="ai-tutor.html"><span class="nav-icon">✦</span> AI Tutor</a>
+          <a href="courses.html"><span class="nav-icon">◈</span> Subjects</a>
+          <a href="quiz.html"><span class="nav-icon">✓</span> Quizzes</a>
+          <a href="progress.html"><span class="nav-icon">◒</span> Progress</a>
+          <a href="history.html"><span class="nav-icon">◷</span> History</a>
+        </nav>
+
+        <div class="sidebar-divider"></div>
+
+        <nav class="navigation" aria-label="Support navigation">
+          <a href="settings.html"><span class="nav-icon">⚙</span> Settings</a>
+          <a href="#"><span class="nav-icon">?</span> Help Center</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">LEARNER DASHBOARD</p>
+            <h1>My Learning</h1>
+          </div>
+          <div class="top-actions">
+            <button class="icon-button" aria-label="Notifications">
+              ♧<span></span>
+            </button>
+            <div class="avatar" aria-label="Profile: Muadh">M</div>
+          </div>
+        </header>
+
+        <section class="stats-grid three-up">
+          <article class="stat-card">
+            <div class="stat-icon">📚</div>
+            <div>
+              <span>Active courses</span>
+              <strong>4</strong>
+            </div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon">⏱</div>
+            <div>
+              <span>Study time</span>
+              <strong>06h 30m</strong>
+            </div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon">🏆</div>
+            <div>
+              <span>Achievements</span>
+              <strong>12</strong>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-grid two-col">
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Continue learning</h2>
+              <a href="courses.html">View all</a>
+            </div>
+
+            <div class="learning-item">
+              <div class="subject-badge purple">JS</div>
+              <div class="learning-copy">
+                <h3>JavaScript Essentials</h3>
+                <p>12 of 16 lessons completed</p>
+                <div class="mini-progress">
+                  <span style="width: 75%"></span>
+                </div>
+              </div>
+              <button class="small-button" type="button">Resume</button>
+            </div>
+
+            <div class="learning-item">
+              <div class="subject-badge orange">ALG</div>
+              <div class="learning-copy">
+                <h3>Algebra Foundations</h3>
+                <p>5 of 12 lessons completed</p>
+                <div class="mini-progress">
+                  <span class="orange" style="width: 42%"></span>
+                </div>
+              </div>
+              <button class="small-button" type="button">Continue</button>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Learning plan</h2>
+              <a href="progress.html">Details</a>
+            </div>
+
+            <ul class="check-list">
+              <li>Review DOM events and event listeners</li>
+              <li>Complete the algebra functions challenge set</li>
+              <li>Practice one science concept recap before Friday</li>
+              <li>Finish a short quiz streak to protect your weekly goal</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="content-grid two-col">
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Upcoming sessions</h2>
+              <a href="ai-tutor.html">Plan</a>
+            </div>
+
+            <div class="session-list">
+              <div class="session-item">
+                <div>
+                  <strong>Web Development Sprint</strong>
+                  <small>Today · 5:30 PM</small>
+                </div>
+                <span class="tag">Live</span>
+              </div>
+              <div class="session-item">
+                <div>
+                  <strong>Algebra Booster</strong>
+                  <small>Tomorrow · 9:00 AM</small>
+                </div>
+                <span class="tag purple-tag">Prep</span>
+              </div>
+              <div class="session-item">
+                <div>
+                  <strong>Science Concept Review</strong>
+                  <small>Friday · 4:00 PM</small>
+                </div>
+                <span class="tag green-tag">Review</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Recommended next step</h2>
+              <a href="quiz.html">Take quiz</a>
+            </div>
+
+            <div class="tip-box">
+              <span class="tip-symbol">✦</span>
+              <div>
+                <h3>Focus your next session</h3>
+                <p>
+                  Your latest practice indicates event handling is still your
+                  weak spot. Spend 20 minutes on a targeted challenge before
+                  moving on.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="./js/theme.js"></script>
+  </body>
+</html>

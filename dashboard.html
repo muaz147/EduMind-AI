@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAdapt AI</title>
+  </head>
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EduAdapt AI | Dashboard</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./css/dashboard.css" />
+      </head>
+      <body>
+        <div class="app">
+          <aside class="sidebar">
+            <a href="dashboard.html" class="brand">
+              <span class="brand-icon">✦</span>
+              EduAdapt AI
+            </a>
+
+            <p class="nav-label">Workspace</p>
+
+            <nav class="navigation">
+              <a href="dashboard.html" class="active"
+                >⌂ <span>Dashboard</span></a
+              >
+              <a href="my-learning.html">▣ <span>My Learning</span></a>
+              <a href="ai-tutor.html">✦ <span>AI Tutor</span></a>
+              <a href="courses.html">◈ <span>Subjects</span></a>
+              <a href="quiz.html">✓ <span>Quizzes</span></a>
+              <a href="progress.html">◒ <span>Progress</span></a>
+              <a href="history.html">◷ <span>History</span></a>
+            </nav>
+
+            <div class="divider"></div>
+
+            <nav class="navigation">
+              <a href="settings.html">⚙ <span>Settings</span></a>
+              <a href="#">? <span>Help Center</span></a>
+            </nav>
+          </aside>
+
+          <main class="main-content">
+            <header class="topbar">
+              <div>
+                <h1 id="dashboard-greeting">Good afternoon 👋</h1>
+                <p>Ready to continue your learning journey?</p>
+              </div>
+
+              <div class="top-actions">
+                <input type="search" placeholder="Search topics..." />
+                <button class="notification" aria-label="Notifications">
+                  ♧
+                </button>
+                <div class="avatar" id="dashboard-avatar" aria-label="Profile">
+                  ?
+                </div>
+                <button class="logout-button" id="logout-button" type="button">
+                  Log out
+                </button>
+              </div>
+            </header>
+
+            <section class="stats-grid">
+              <article class="stat-card">
+                <div class="stat-icon">🔥</div>
+                <div>
+                  <span>Current streak</span>
+                  <strong>7 Days</strong>
+                </div>
+              </article>
+
+              <article class="stat-card">
+                <div class="stat-icon">📚</div>
+                <div>
+                  <span>Lessons completed</span>
+                  <strong>12</strong>
+                </div>
+              </article>
+
+              <article class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div>
+                  <span>Average score</span>
+                  <strong>82%</strong>
+                </div>
+              </article>
+
+              <article class="stat-card">
+                <div class="stat-icon">📈</div>
+                <div>
+                  <span>Overall progress</span>
+                  <strong>78%</strong>
+                </div>
+              </article>
+            </section>
+
+            <section class="dashboard-grid">
+              <article class="card continue-card">
+                <div class="card-header">
+                  <h2>Continue learning</h2>
+                  <a href="#">View all</a>
+                </div>
+
+                <div class="course">
+                  <div class="course-icon">&lt;/&gt;</div>
+
+                  <div class="course-details">
+                    <h3>Understanding the JavaScript DOM</h3>
+                    <p>Computer Science · Beginner</p>
+
+                    <div class="progress-line">
+                      <div class="progress">
+                        <span></span>
+                      </div>
+                      <b>78%</b>
+                    </div>
+                  </div>
+
+                  <button class="primary-button">Continue →</button>
+                </div>
+              </article>
+
+              <article class="card recommendation">
+                <span class="tag">✦ AI Recommendation</span>
+                <h2>Strengthen your DOM skills</h2>
+                <p>
+                  You struggled with DOM Events in your last quiz. We recommend
+                  reviewing event listeners next.
+                </p>
+                <button class="primary-button">Start lesson</button>
+              </article>
+
+              <article class="card chart-card">
+                <div class="card-header">
+                  <h2>Your performance</h2>
+                  <a href="#">Last 7 days</a>
+                </div>
+
+                <div class="chart">
+                  <i style="--height: 48%"></i>
+                  <i style="--height: 65%"></i>
+                  <i style="--height: 55%"></i>
+                  <i style="--height: 82%"></i>
+                  <i style="--height: 70%"></i>
+                  <i style="--height: 92%"></i>
+                  <i style="--height: 78%"></i>
+                </div>
+
+                <div class="chart-labels">
+                  <span>Mon</span>
+                  <span>Tue</span>
+                  <span>Wed</span>
+                  <span>Thu</span>
+                  <span>Fri</span>
+                  <span>Sat</span>
+                  <span>Sun</span>
+                </div>
+              </article>
+
+              <article class="card">
+                <div class="card-header">
+                  <h2>Weak areas</h2>
+                  <a href="#">Improve</a>
+                </div>
+
+                <div class="weak-area">
+                  <div><span>DOM Events</span><b>45%</b></div>
+                  <div class="weak-progress"><span class="danger"></span></div>
+                </div>
+
+                <div class="weak-area">
+                  <div><span>Functions</span><b>67%</b></div>
+                  <div class="weak-progress"><span class="warning"></span></div>
+                </div>
+
+                <div class="weak-area">
+                  <div><span>Arrays</span><b>91%</b></div>
+                  <div class="weak-progress">
+                    <span class="success large"></span>
+                  </div>
+                </div>
+
+                <div class="weak-area">
+                  <div><span>Variables</span><b>96%</b></div>
+                  <div class="weak-progress">
+                    <span class="success larger"></span>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="user-history-card card">
+              <div class="card-header">
+                <div>
+                  <h2>User history</h2>
+                  <p class="card-subtitle">
+                    Accounts registered on this browser
+                  </p>
+                </div>
+              </div>
+              <ul class="user-history-list" id="user-history-list"></ul>
+              <p class="user-history-empty" id="user-history-empty" hidden>
+                No registered users yet.
+              </p>
+            </section>
+          </main>
+        </div>
+        <script src="./js/theme.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/data.js"></script>
+        <script src="./js/auth.js"></script>
+      </body>
+    </html>
+  </body>
+</html>

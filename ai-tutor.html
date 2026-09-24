@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAdapt AI | AI Tutor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/pages.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a href="dashboard.html" class="brand">
+          <span class="brand-icon">✦</span>
+          <span>EduAdapt <b>AI</b></span>
+        </a>
+
+        <p class="nav-label">Workspace</p>
+
+        <nav class="navigation" aria-label="Main navigation">
+          <a href="dashboard.html"><span class="nav-icon">⌂</span> Dashboard</a>
+          <a href="my-learning.html"
+            ><span class="nav-icon">▣</span> My Learning</a
+          >
+          <a href="ai-tutor.html" class="active"
+            ><span class="nav-icon">✦</span> AI Tutor</a
+          >
+          <a href="courses.html"><span class="nav-icon">◈</span> Subjects</a>
+          <a href="quiz.html"><span class="nav-icon">✓</span> Quizzes</a>
+          <a href="progress.html"><span class="nav-icon">◒</span> Progress</a>
+          <a href="history.html"><span class="nav-icon">◷</span> History</a>
+        </nav>
+
+        <div class="sidebar-divider"></div>
+
+        <nav class="navigation" aria-label="Support navigation">
+          <a href="settings.html"><span class="nav-icon">⚙</span> Settings</a>
+          <a href="#"><span class="nav-icon">?</span> Help Center</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">AI SUPPORT</p>
+            <h1>AI Tutor</h1>
+          </div>
+          <div class="top-actions">
+            <button class="icon-button" aria-label="Notifications">
+              ♧<span></span>
+            </button>
+            <div class="avatar" aria-label="Profile: Muadh">M</div>
+          </div>
+        </header>
+
+        <section class="hero-panel">
+          <div>
+            <span class="panel-tag">Smart study coach</span>
+            <h2>Let your tutor create the next best step.</h2>
+            <p>
+              Based on your latest quiz, the AI tutor recommends a short
+              revision block on DOM events and logic flow before your next
+              challenge.
+            </p>
+          </div>
+          <button class="primary-button" type="button">Ask tutor</button>
+        </section>
+
+        <section class="content-grid two-col">
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Suggested study prompts</h2>
+              <a href="#">New prompt</a>
+            </div>
+
+            <ul class="prompt-list">
+              <li>
+                <strong>Explain</strong> why event listeners are triggered in a
+                different order.
+              </li>
+              <li>
+                <strong>Practice</strong> three DOM challenge questions with
+                instant feedback.
+              </li>
+              <li>
+                <strong>Review</strong> a short summary of variables, arrays,
+                and functions.
+              </li>
+              <li>
+                <strong>Plan</strong> a 20-minute study session around my weak
+                areas.
+              </li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Coach summary</h2>
+              <a href="progress.html">More insight</a>
+            </div>
+
+            <div class="metric-stack">
+              <div>
+                <span>Confidence</span>
+                <strong>82%</strong>
+              </div>
+              <div>
+                <span>Focus area</span>
+                <strong>DOM Events</strong>
+              </div>
+              <div>
+                <span>Next target</span>
+                <strong>2 lessons</strong>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel full-panel">
+            <div class="panel-header">
+              <h2>Recent tutor feedback</h2>
+              <a href="history.html">View history</a>
+            </div>
+
+            <div class="feedback-list">
+              <div class="feedback-item">
+                <span class="feedback-badge success">Great</span>
+                <div>
+                  <h3>JavaScript DOM review</h3>
+                  <p>
+                    You answered 3 of 4 quick checks correctly. Consider
+                    practicing event listeners again.
+                  </p>
+                </div>
+              </div>
+              <div class="feedback-item">
+                <span class="feedback-badge neutral">Tip</span>
+                <div>
+                  <h3>Algebra functions</h3>
+                  <p>
+                    Focus on graph interpretation and function notation this
+                    week. You are close.
+                  </p>
+                </div>
+              </div>
+              <div class="feedback-item">
+                <span class="feedback-badge warning">Review</span>
+                <div>
+                  <h3>Science recap</h3>
+                  <p>
+                    Remember to connect the concept to real-life examples before
+                    the next quiz.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="./js/theme.js"></script>
+  </body>
+</html>
